@@ -195,12 +195,12 @@ nav i {
 /* main */
 
 /* main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: url(../../static/img/bg.png) repeat;
   padding-left: 190px;
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: url(../../static/img/bg.png) repeat;
   padding-left: 190px;
 }
 
@@ -566,11 +566,11 @@ small {
   background-color: #00695c !important;
 } */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   #experience .container {
     width: 860px;
   }
-}
+} */
 
 @media (max-width: 1360px) {
   .card ul li {
