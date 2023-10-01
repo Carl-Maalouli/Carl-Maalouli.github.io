@@ -21,7 +21,7 @@
 ## Activity 4 (Screenshots):  
 ### Repo:
 ![image](Screenshots/Screenshot-Activity4-Repo.png) 
-### Home page:
+### "Places Travelled" Section:
 ![image](Screenshots/Screenshot-Activity4-Website.png)  
 <br /> 
   
