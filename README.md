@@ -11,5 +11,12 @@
 ![image](Screenshots/Screenshot-Activity2-Website.png)  
 <br />  
 
+## Activity 3 (Screenshots):  
+### Repo:
+![image](Screenshots/Screenshot-Activity3-Repo.png) 
+### Home page:
+![image](Screenshots/Screenshot-Activity3-Website.png)  
+<br /> 
+
 Please note that this repository is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io.
 
