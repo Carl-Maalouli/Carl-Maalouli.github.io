@@ -158,7 +158,7 @@ a {
 blockquote {
   border-left: 5px solid #795548;
   color: #795548;
-  font-size: 125%;
+  font-size: 110%;
   font-weight: 400;
   margin: 20px 0;
   padding-left: 1.5rem;
@@ -394,9 +394,10 @@ h3 {
 }
 
 .card .role {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   position: absolute;
-  right: 38px;
+  right: 62px;
   top: 35px;
 }
 
@@ -461,8 +462,9 @@ h3 {
 }
 
 .card ul li li {
-  color: #666;
-  font-size: 13px;
+  color: #545454;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .card .card-title {
@@ -518,6 +520,11 @@ a.hoverline:hover {
   color: inherit;
   margin: 0;
   padding: 30px 0;
+}
+
+#education .card-content .row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
 #experience .card-content .row {
@@ -610,6 +617,11 @@ small {
     line-height: 200%;
     margin-left: 20px;
   }
+  .card ul li li {
+    font-size: 14px;
+    line-height: 200%;
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1160px) {
@@ -678,16 +690,17 @@ small {
   section#intro {
     margin-bottom: -64px;
   }
-  .card .role {
+  /* .card .role {
     position: relative;
     right: initial;
     top: initial;
-  }
+    font-size: 1.25rem;
+  } */
 }
 
 @media (max-width: 600px) {
   h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 200%;
     margin: 30px 0 0;
   }
@@ -723,4 +736,152 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+  .container .flow-text {
+    font-size:95%;
+    font-weight:300;
+  }
+  blockquote * {
+    font-size: 100%;
+  }
 }
+
+.logo-img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .logo-img {
+  position: absolute;
+  right: 62px;
+  top: 15px;
+}
+
+.custom-col {
+  width:50%;
+  height:auto;
+}
+
+@media screen and (max-width: 992px) {
+
+  .custom-col {
+    width: 60%;
+    height:auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  .card .role {
+    font-size: 1.25rem;
+  }
+}
+
+/* Default - no line break */
+.break-on-smaller {
+  display: none;
+}
+
+/* On small screens, show the <br> element */
+@media (max-width: 850px) {
+  .break-on-smaller {
+      display: inline;
+  }
+  .card .role {
+    text-align: center;
+    top: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .custom-col {
+    width: 100%;
+    height:auto;
+  }
+  .card .role {
+    position: relative;
+    right: initial;
+    top: initial;
+    font-size: 1.25rem;
+    text-align: start;
+  }
+  .break-on-smaller {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card .logo-img {
+    position: absolute; /* Change to absolute positioning */
+    top: 20px; /* Adjust the top position as needed */
+    right: 45px; /* Adjust the right position as needed */
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card .logo-img {
+    position: absolute; /* Change to absolute positioning */
+    top: 25px; /* Adjust the top position as needed */
+    right: 45px; /* Adjust the right position as needed */
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card .logo-img {
+    position: absolute; /* Change to absolute positioning */
+    right: 30px; /* Adjust the right position as needed */
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}
+
+/* Default - no line break */
+.break-on-small {
+  display: none;
+}
+
+/* On small screens, show the <br> element */
+@media (max-width: 1165px) {
+  .break-on-small {
+      display: inline;
+  }
+}
+
+
+/* @media screen and (max-width: 1200px) {
+  .logo-img {
+    right: 132px;
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo-img {
+    right: 92px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-img {
+    right: 72px;
+    width: 175px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-img {
+    right: 10px;
+    width: 140px;
+  }
+} */
+
+/* @media screen and (max-width: 480px) {
+  .logo-img {
+    right: 10px;
+    width: 110px;
+  }
+} */
