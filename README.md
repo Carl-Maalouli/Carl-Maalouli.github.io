@@ -1,29 +1,5 @@
 # Carl Maalouli
-
-## Activity 1 (Screenshot):  
-![image](Screenshots/Screenshot-Activity1.png)  
-<br />  
+## Professional Profile - Website
   
-## Activity 2 (Screenshots):  
-### Repo:
-![image](Screenshots/Screenshot-Activity2-Repo.png) 
-### Home page:
-![image](Screenshots/Screenshot-Activity2-Website.png)  
-<br />  
-  
-## Activity 3 (Screenshots):  
-### Repo:
-![image](Screenshots/Screenshot-Activity3-Repo.png) 
-### Home page:
-![image](Screenshots/Screenshot-Activity3-Website.png)  
-<br />  
-  
-## Activity 4 (Screenshots):  
-### Repo:
-![image](Screenshots/Screenshot-Activity4-Repo.png) 
-### "Places Travelled" Section:
-![image](Screenshots/Screenshot-Activity4-Website.png)  
-<br /> 
-  
-Please note that this repository is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io.
+Please note that this repository began as a clone of https://github.com/varadbhogayata/varadbhogayata.github.io.
 
