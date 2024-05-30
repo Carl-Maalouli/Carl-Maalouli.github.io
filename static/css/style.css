@@ -438,6 +438,11 @@ h3 {
   border: none;
 }
 
+#education .card-action {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
 #experience .card .col.s12.m2 a {
   display: block;
 }
@@ -835,6 +840,17 @@ small {
     right: 30px; /* Adjust the right position as needed */
     width: 120px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card .logo-img {
+    position: relative; /* Change to absolute positioning */
+    top:15px;
+    left: 0px; /* Adjust the right position as needed */
+    width: 130px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: -30px;
   }
 }
 
