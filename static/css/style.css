@@ -892,6 +892,9 @@ small {
     height: auto; /* Maintain the aspect ratio */
   }
 }
+#coursework {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+}
 
 @media screen and (max-width: 756px) {
   .card .logo-img {
@@ -901,6 +904,9 @@ small {
     width: 180px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
     margin-bottom: -38px;
+  }
+  #coursework li {
+    margin-bottom: 5px;
   }
 }
 
