@@ -96,10 +96,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+.readme:hover{
   color: white;
-  background-color: #00796b;
-} */
+  background-color: #5d939e;
+}
 
 .contactme {
   position: relative;
@@ -117,8 +117,8 @@
 }
 
 .contactme:hover{
-  color: #00796b;
-  background-color: white;
+  color: white;
+  background-color: #5d939e;
 }
 /* main body */
 
@@ -504,6 +504,19 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
+a.hoversize {
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
+#skills .row .col {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+
 /* main a.hoverline */
 
 /* a.hoverline:hover {
@@ -511,7 +524,12 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
+  font-size: 103%;
   border-bottom: 3px solid #004d40 !important;
+}
+
+a.hoversize:hover {
+  font-size: 103%;
 }
 
 #skills .card.large {
@@ -904,6 +922,26 @@ small {
     width: 180px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
     margin-bottom: -38px;
+  }
+  #coursework > * {
+    position: relative;
+  }
+  
+  #coursework > *::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the border as needed */
+    background-color: #000000; /* Adjust the color of the border as needed */
+    opacity: 20%;
+  }
+  
+  
+  #coursework > *:last-child::before,
+  #coursework > *:nth-last-child(2)::before {
+    display: none; /* Hide the border for the last row items */
   }
   #coursework li {
     margin-bottom: 5px;
