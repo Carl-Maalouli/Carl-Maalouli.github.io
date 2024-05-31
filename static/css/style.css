@@ -721,16 +721,8 @@ small {
     line-height: 200%;
     margin: 30px 0 0;
   }
-  #intro.section .container *:not(span) {
+  #intro.section .container *:not(span):not(.readme):not(.contactme) {
     padding: 0;
-  }
-  .readme {
-    padding: 11px 35px;
-
-  }
-  .contactme {
-    padding: 11px 35px;
-
   }
   .card .card-content .card-title {
     font-size: 20px;
