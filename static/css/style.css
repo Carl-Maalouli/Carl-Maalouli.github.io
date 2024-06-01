@@ -96,10 +96,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+.readme:hover{
   color: white;
-  background-color: #00796b;
-} */
+  background-color: #5d939e;
+}
 
 .contactme {
   position: relative;
@@ -117,8 +117,8 @@
 }
 
 .contactme:hover{
-  color: #00796b;
-  background-color: white;
+  color: white;
+  background-color: #5d939e;
 }
 /* main body */
 
@@ -504,6 +504,26 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
+p.hoverline {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
+a.hoversize {
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
+#skills .row .col {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
 /* main a.hoverline */
 
 /* a.hoverline:hover {
@@ -511,7 +531,22 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
+  font-size: 103%;
   border-bottom: 3px solid #004d40 !important;
+}
+
+p.hoverline:hover {
+  font-size: 103%;
+  border-bottom: 3px solid #004d40 !important;
+  cursor: pointer
+}
+
+p.hoverpointer:hover {
+  cursor: pointer;
+}
+
+a.hoversize:hover {
+  font-size: 103%;
 }
 
 #skills .card.large {
@@ -558,7 +593,7 @@ a.hoverline:hover {
 }
 
 .card.medium .card-image {
-  height: 240px;
+  height: 200px;
 }
 
 .card-action a.btn-floating {
@@ -736,10 +771,7 @@ small {
     font-size: 20px;
     line-height: 24px;
   }
-  i.mdi-navigation-close.right {
-    position: relative;
-    bottom: 15px;
-  }
+  
   #contact a:not(.btn-floating) {
     text-align: center;
     display: block;
@@ -884,6 +916,54 @@ small {
   }
 }
 
+/* .card.medium .card-content {
+  height: fit-content;
+} */
+
+.card.medium span.proj {
+  margin-top:20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .card.medium span.proj {
+    margin-top:10px;
+  }
+}
+
+#projects .card.medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.medium .card-reveal ul li {
+  font-size: 80%;
+}
+
+#projects .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+#projects .card-content p {
+  margin-top: auto; /* Push the paragraph to the bottom */
+  margin-bottom: 0; /* Ensure there's no extra space below the paragraph */
+}
+
+@media screen and (max-width: 992px) {
+  .card.medium span.proj {
+    margin-top:0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card.medium span.proj {
+    margin-top:35px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .card .logo-img {
     position: absolute; /* Change to absolute positioning */
@@ -904,6 +984,26 @@ small {
     width: 180px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
     margin-bottom: -38px;
+  }
+  #coursework > * {
+    position: relative;
+  }
+  
+  #coursework > *::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the border as needed */
+    background-color: #000000; /* Adjust the color of the border as needed */
+    opacity: 10%;
+  }
+  
+  
+  #coursework > *:last-child::before,
+  #coursework > *:nth-last-child(2)::before {
+    display: none; /* Hide the border for the last row items */
   }
   #coursework li {
     margin-bottom: 5px;
@@ -956,37 +1056,12 @@ small {
 }
 
 
-/* @media screen and (max-width: 1200px) {
-  .logo-img {
-    right: 132px;
-    width: 220px;
-  }
+.sticky-header {
+  position: sticky;
+  top: -20px;
+  margin-top: -20px;
+  background-color: white;
+  z-index: 10;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
 }
-
-@media screen and (max-width: 992px) {
-  .logo-img {
-    right: 92px;
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo-img {
-    right: 72px;
-    width: 175px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .logo-img {
-    right: 10px;
-    width: 140px;
-  }
-} */
-
-/* @media screen and (max-width: 480px) {
-  .logo-img {
-    right: 10px;
-    width: 110px;
-  }
-} */
