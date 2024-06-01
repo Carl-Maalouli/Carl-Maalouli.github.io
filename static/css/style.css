@@ -596,6 +596,27 @@ a.hoversize:hover {
   height: 200px;
 }
 
+#projects .card-reveal span {
+  font-size: 98%;
+}
+
+@media (max-width: 1250px) {
+  #projects .card-reveal span {
+    font-size: 84%;
+  }
+}
+
+@media (max-width: 1092px) {
+  #projects .card-reveal span {
+    font-size: 74%;
+  }
+}
+@media (max-width: 992px) {
+  #projects .card-reveal span {
+    font-size: 98%;
+  }
+}
+
 .card-action a.btn-floating {
   margin-bottom: 0;
 }
