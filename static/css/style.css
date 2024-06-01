@@ -992,7 +992,7 @@ small {
   #coursework > *::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     height: 2px; /* Adjust the height of the border as needed */
