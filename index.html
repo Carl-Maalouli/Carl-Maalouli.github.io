@@ -383,6 +383,9 @@
         <div class="row">
           <div class="col s12 m6 l4">
             <div class="card medium">
+              <div class="icon-container">
+                <i class="mdi-button-pointer"></i>
+              </div>
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/static/img/capstone.webp" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -424,6 +427,9 @@
 
           <div class="col s12 m6 l4">
             <div class="card medium">
+              <div class="icon-container">
+                <i class="mdi-button-pointer"></i>
+              </div>
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/static/img/OS-Image.jpeg" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -468,6 +474,9 @@
 
           <div class="col s12 m6 l4">
             <div class="card medium">
+              <div class="icon-container">
+                <i class="mdi-button-pointer"></i>
+              </div>
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/static/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -506,6 +515,9 @@
 
           <div class="col s12 m6 l4">
             <div class="card medium">
+              <div class="icon-container">
+                <i class="mdi-button-pointer"></i>
+              </div>
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/static/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -537,6 +549,9 @@
 
           <div class="col s12 m6 l4">
             <div class="card medium">
+              <div class="icon-container">
+                <i class="mdi-button-pointer"></i>
+              </div>
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/static/img/map.webp" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -565,12 +580,42 @@
               </div>
             </div>
           </div>
-
-
           <!-- ************* -->
         </div>
       </div>
     </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card.medium');
+        let disableTimeout; // Variable to store the timeout
+      
+        cards.forEach(card => {
+          const iconContainer = card.querySelector('.icon-container');
+          const activators = card.querySelectorAll('.activator');
+          const closeButton = card.querySelector('.mdi-navigation-close');
+      
+          activators.forEach(activator => {
+            activator.addEventListener('click', function() {
+              iconContainer.style.display = 'none';
+              
+            });
+          });
+      
+          closeButton.addEventListener('click', function() {
+            iconContainer.style.display = 'block';
+
+          });
+          const parentSpan = closeButton.parentElement;
+          parentSpan.addEventListener('click', function() {
+            iconContainer.style.display = 'block';
+      
+          });
+          
+        });
+      });
+      
+    </script>
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
