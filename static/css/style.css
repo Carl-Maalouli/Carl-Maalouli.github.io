@@ -1138,3 +1138,13 @@ small {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
+.back-to-top-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+.back-to-top {
+  text-decoration: none;
+  color: #000; /* Adjust as needed */
+}
