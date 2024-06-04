@@ -884,6 +884,10 @@ small:not(.show) {
   display: none;
 }
 
+.hide-on-medium {
+  display: inline;
+ }
+
 #eccc-title {
   margin-bottom: 45px;
 }
@@ -899,6 +903,9 @@ small:not(.show) {
     width: 40%;
     height: auto;
   }
+  .hide-on-medium {
+    display: none;
+   }
 }
 
 /* On small screens, show the <br> element */
@@ -1080,12 +1087,19 @@ small:not(.show) {
 .break-on-small {
   display: none;
 }
+.hide-on-small {
+ display: inline;
+}
 
 /* On small screens, show the <br> element */
 @media (max-width: 1165px) {
   .break-on-small {
       display: inline;
   }
+  .hide-on-small {
+    display: none;
+   }
+  
 }
 
 
@@ -1105,8 +1119,8 @@ small:not(.show) {
 
 #projects .icon-container {
   position: absolute;
-  top: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  top: 15px; /* Adjust as needed */
+  right: 15px; /* Adjust as needed */
   z-index: 2; /* Ensure it is on top of other elements */
 }
 
@@ -1115,15 +1129,31 @@ small:not(.show) {
 }
 
 #projects .mdi-button-pointer {
-  font-size: 45px; /* Adjust as needed */
+  font-size: 35px; /* Adjust as needed */
   color: rgb(0, 0, 0); /* Adjust as needed */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1250px) {
   #projects .mdi-button-pointer {
-    font-size: 40px; /* Adjust as needed */
+    font-size: 30px;
   }
 }
+@media (max-width: 992px) {
+  #projects .mdi-button-pointer {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 756px) {
+  #projects .mdi-button-pointer {
+    font-size: 30px;
+  }
+}
+@media (max-width: 602px) {
+  #projects .mdi-button-pointer {
+    font-size: 35px;
+  }
+} 
 
 .mdi-navigation-close.disabled-close {
   opacity: 30%;
