@@ -383,7 +383,7 @@ h3 {
 }
 
 #intro.section .blue {
-  padding: 0 10px;
+  padding: 0px 5px;
 }
 
 .overlay {
@@ -851,6 +851,15 @@ small:not(.show) {
   transition: all 0.3s ease-in-out;
 }
 
+.axiom-img {
+  position: absolute;
+  width: 22%;
+  right: 62px;
+  top: 12px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
 .card .eccc-img {
   position: absolute;
   right: 42px;
@@ -1054,6 +1063,33 @@ small:not(.show) {
   display: none;
 }
 
+.pl-4 {
+  padding-left: 10px;
+}
+
+.ml-1 {
+  margin-left: 1px !important;
+}
+
+.axiom-title {
+  margin-top: -35px !important;
+}
+
+@media screen and (max-width: 1340px) {
+  .card .axiom-img {
+    top:10px;
+    width: 25%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .card .axiom-img {
+    width: 32%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .card .eccc-img {
     width: 35%;
@@ -1068,6 +1104,14 @@ small:not(.show) {
   #eccc-link2 {
     display: block;
   }
+  .axiom-img {
+    left: 12px;
+    top: 10px !important;
+    margin-top: -8px !important;
+  }
+  .axiom-title {
+    margin-top: 30px !important;
+  }
   .card .eccc-img {
     position: relative; /* Change to absolute positioning */
     top:30px;
@@ -1080,6 +1124,37 @@ small:not(.show) {
 @media screen and (max-width: 600px) {
   .card .eccc-img {
     width: 100%;
+  }
+  .axiom-img {
+    width: 35% !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .axiom-img {
+    width: 40% !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .axiom-img {
+    width: 45% !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .axiom-img {
+    width: 52% !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .axiom-img {
+    width: 60% !important;
+    height: auto;
   }
 }
 
@@ -1099,7 +1174,9 @@ small:not(.show) {
   .hide-on-small {
     display: none;
    }
-  
+  .axiom-img {
+    top: 22px !important;
+  }
 }
 
 
