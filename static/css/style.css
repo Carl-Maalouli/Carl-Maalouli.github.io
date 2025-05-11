@@ -678,8 +678,13 @@ small:not(.show) {
 }
 
 .blue {
+  background-color: #2a515a !important;
+}
+
+.light-blue {
   background-color: #2a515a67 !important;
 }
+
 
 .rounded {
   display: inline-block;
